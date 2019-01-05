@@ -1,0 +1,42 @@
+.content {
+    max-width: 960px;
+    margin: auto;
+}
+body {
+    background-color: white;
+    font-family: Helvetica, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif
+}
+
+ul {
+    padding: 0px;
+    margin:12px;
+}
+
+ul li {
+    margin: 6px;
+}
+
+a:link {
+  color: tomato; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: tomato;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkorange;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: darkorange;
+  background-color: transparent;
+  text-decoration: none;
+}
+
