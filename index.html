@@ -9,34 +9,6 @@
       gtag('config', 'UA-131755245-1');
     </script>
 
-    <style>
-      * {
-	  box-sizing: border-box;
-      }
-
-      /* Create two equal columns that floats next to each other */
-      .column {
-	  float: left;
-	  padding: 10px;
-      }
-
-      .left {
-	  width: 70%;
-      }
-      .right {
-	  width: 30%;
-      }
-
-      /* Clear floats after the columns */
-      .row:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-      }
-    </style>    
-
-    
-
     <link rel="stylesheet" href="myWebPageStyle.css">
     <meta charset="UTF-8">
     
@@ -48,7 +20,7 @@
       
       <!-- <h1>HU Guanghui, 胡&nbsp 光辉<span style="float:right"><a href="HuGuanghui_CV.pdf"><font size=4>Download CV</font></a></span></h1> -->
       <h1>HU Guanghui, 胡&nbsp 光辉</h1>      
-      <hr width=100%>
+      <hr style="width:100%;height:3px;background-color:black">
       <div class="row">
 	<div class="column left">
 	  <p><font size="4">Associate Professor at Department of Mathematics</font></p>
@@ -62,84 +34,84 @@
 	<div class="column right"><img style="float:right;width:80%;" src="./pics/Gary.png"><span style="float:right"><br><a href="HuGuanghui_CV.pdf"><font size=4>Download CV</font></a></span></div>
       </div>
 
-<h2>Education</h2>
-<ul>
-  <li>PhD, Hong Kong Baptist University, 2010</li>
-  <li>Master, Sichuan University, 2006</li>
-  <li>Bachelor, Sichuan University, 2003</li>
-</ul>
+      <h2>Education</h2>
+      <ul>
+	<li>PhD, Hong Kong Baptist University, 2010</li>
+	<li>Master, Sichuan University, 2006</li>
+	<li>Bachelor, Sichuan University, 2003</li>
+      </ul>
 
-<h2>Work experience</h2>
-<ul>
-  <li>Associate Professor, Department of Mathematics, University of Macau, August 2018 - present </li>
-  <li>Assistant Professor, Department of Mathematics, University of Macau, August 2012 - August 2018</li>
-  <li>Visiting Research Associate, Department of Mathematics, Michigan State University, January 2010 - August 2012</li>
-</ul>
+      <h2>Work experience</h2>
+      <ul>
+	<li>Associate Professor, Department of Mathematics, University of Macau, August 2018 - present </li>
+	<li>Assistant Professor, Department of Mathematics, University of Macau, August 2012 - August 2018</li>
+	<li>Visiting Research Associate, Department of Mathematics, Michigan State University, January 2010 - August 2012</li>
+      </ul>
 
-<h2>Teaching</h2>
-<ul>
-  <li>Spring semester of 2019: MATH2004 Mathematical Analysis II for undergraduates, and MATH7019 Topics in Partial Differential Equations for postgraduates.</li>
-  <li>Previous courses: Mathematical Analysis I, Numerical Methods for Differential Equations, Numerical Analysis, Advanced Engineering Mathematics, Calculus(at Michigan State University).</li>
-</ul>
+      <h2>Teaching</h2>
+      <ul>
+	<li>Spring semester of 2019: MATH2004 Mathematical Analysis II for undergraduates, and MATH7019 Topics in Partial Differential Equations for postgraduates.</li>
+	<li>Previous courses: Mathematical Analysis I, Numerical Methods for Differential Equations, Numerical Analysis, Advanced Engineering Mathematics, Calculus(at Michigan State University).</li>
+      </ul>
 
-<h2>Research interests, <a href="./publication.html"><font size=3>Publication list</font></a></h2>
-<p>I am interested in the adaptive numerical methods for partial
-  differential equations, the related numerical analysis, as well as
-  their applications in computational physics. In particular, my
-  research focuses on the following two problems,
-  <ul>
-    <li>Computational fluid dynamics:
-      <p>
-	My research in this area focuses on the highly efficient
-	numerical methods for simulating the compressible
-	flows. More specifically, I am interested in developing a
-	high order and adaptive finite volume framework for steady
-	Euler equations and their applications in the optimal design
-	of the vehicles. I am also interested in developing
-	efficient numerical methods for reactive Euler equations,
-	which is a model for detonation simulations.
+      <h2>Research interests, <a href="./publication.html"><font size=3>Publication list</font></a></h2>
+      <p>I am interested in the adaptive numerical methods for partial
+	differential equations, the related numerical analysis, as well as
+	their applications in computational physics. In particular, my
+	research focuses on the following two problems,
+	<ul>
+	  <li>Computational fluid dynamics:
+	    <p>
+	      My research in this area focuses on the highly efficient
+	      numerical methods for simulating the compressible
+	      flows. More specifically, I am interested in developing a
+	      high order and adaptive finite volume framework for steady
+	      Euler equations and their applications in the optimal design
+	      of the vehicles. I am also interested in developing
+	      efficient numerical methods for reactive Euler equations,
+	      which is a model for detonation simulations.
+	    </p>
+	  </li>
+	  
+	  <li>Density functional theory:
+	    <p>
+	      In this research area, I am interested in using adaptive
+	      finite element methods to solve the Kohn-Sham and
+	      time-dependent Kohn-Sham equations, which can be used to
+	      describe the ground state of a given electronic structure,
+	      and dynamics of the system with a given external
+	      potential. In particular, I am interested in the simulating
+	      the high harmonic generation (HHG) phenomenon, which is of
+	      fundamental importance in quantum optics, by solving the
+	      time-dependent Kohn-Sham equation in the time domain.
+	    </p>	
+	  </li>
+	</ul>
+	To support the numerical simulations of the above two works, we
+	develop and maintain a C++ library AFVM4CFD for solving Euler
+	equations, and a C++ library AFEABIC for solving the density
+	functional theory, respectively. Both libraries inherit from a
+	general purposed, C++ library of adaptive finite element package,
+	named <a href="http://dsec.pku.edu.cn/~rli">AFEPack</a> (Adaptive
+	Finite Element Package).
       </p>
-    </li>
-    
-    <li>Density functional theory:
-      <p>
-	In this research area, I am interested in using adaptive
-	finite element methods to solve the Kohn-Sham and
-	time-dependent Kohn-Sham equations, which can be used to
-	describe the ground state of a given electronic structure,
-	and dynamics of the system with a given external
-	potential. In particular, I am interested in the simulating
-	the high harmonic generation (HHG) phenomenon, which is of
-	fundamental importance in quantum optics, by solving the
-	time-dependent Kohn-Sham equation in the time domain.
-      </p>	
-    </li>
-  </ul>
-  To support the numerical simulations of the above two works, we
-  develop and maintain a C++ library AFVM4CFD for solving Euler
-  equations, and a C++ library AFEABIC for solving the density
-  functional theory, respectively. Both libraries inherit from a
-  general purposed, C++ library of adaptive finite element package,
-  named <a href="http://dsec.pku.edu.cn/~rli">AFEPack</a> (Adaptive
-  Finite Element Package).
-</p>
 
-<h2>Awards</h2>
-<ul>
-  <li>FST Teaching Excellence Award 2017/2018 of Faculty of Science and Technology at University of Macau, 2018</li>
-  <li>The Best Thesis Award of Hong Kong Mathematical Society, 2010</li>
-  <li>The First Prize Winner of the Third Student Paper Competition for Young Computational Mathematicians, China Society for Computational Mathematics, 2007</li>
-</ul>
+      <h2>Awards</h2>
+      <ul>
+	<li>FST Teaching Excellence Award 2017/2018 of Faculty of Science and Technology at University of Macau, 2018</li>
+	<li>The Best Thesis Award of Hong Kong Mathematical Society, 2010</li>
+	<li>The First Prize Winner of the Third Student Paper Competition for Young Computational Mathematicians, China Society for Computational Mathematics, 2007</li>
+      </ul>
 
-<br>
-<hr width="100%">
-<p><span style="float:right"><font size=2>Powered by <a href="http://www.github.com">Github</a></font></p>
-<br>
-<br>
-<br>
+      <br>
+      <hr style="width:100%;height:3px;background-color:black">
+      <p><span style="float:right"><font size=2>Powered by <a href="http://www.github.com">Github</a></font></p>
+      <br>
+      <br>
+      <br>
 
 
 
-</div> </body>
+  </div> </body>
 
 </html>
