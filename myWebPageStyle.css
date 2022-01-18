@@ -5,7 +5,10 @@
 body {
     background-color: white;
     /* font-family: Helvetica, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif */
-    font-family :Georgia, Helvetica, Arial, SimSun, sans-serif
+    font-family :Georgia, Helvetica, Arial, SimSun, sans-serif;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul {
