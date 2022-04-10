@@ -41,8 +41,7 @@ body {
 ul {
     padding: 0px;
     margin:12px;
-    list-style-type:none;
-    
+    list-style: square;    
 }
 
 ul li {
