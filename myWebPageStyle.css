@@ -72,34 +72,33 @@ a:active {
     text-decoration: none;
 }
 
-table{
+table.frontPageTab{
     width: 100%;
     border-collapse:collapse;
 }
-/* tr:nth-child(odd) {background-color: #f2f2f2;} */
 
-td{
+.frontPageTab td{
     text-align:center;
 }
 
-th:nth-child(odd){
+.frontPageTab th:nth-child(odd){
     background: #dcdcdc;
     padding:0px;
     font-size:120%;
 }
 
-th:nth-child(even){
+.frontPageTab th:nth-child(even){
     padding:0px;
     font-size:150%;
 }
 
 /*  Define the background color for all the ODD table columns  */
-td:nth-child(odd){ 
+.frontPageTab td:nth-child(odd){ 
     background: #e5e4e2;
     padding:0px;
 }
 /*  Define the background color for all the EVEN table columns  */
-td:nth-child(even){
+.frontPageTab td:nth-child(even){
     /* background: #dae5f4; */
     padding:0px;    
 }
