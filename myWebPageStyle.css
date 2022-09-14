@@ -103,3 +103,31 @@ table.frontPageTab{
     padding:0px;    
 }
 
+table.students{
+    width: 100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.students th{
+    text-align: left;
+}
+
+.students tr th:first-child, .students tr td:first-child{
+    vertical-align: top;
+    white-space: nowrap;
+    width:130px;
+}
+
+.students th:not(:last-child), .students td:not(:last-child){
+    vertical-align: top;
+    white-space: nowrap;
+    width:180px;
+}
+
+.students th:last-child, .students td:last-child{
+    vertical-align: top;
+    white-space: wrap;
+}
