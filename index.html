@@ -97,27 +97,26 @@
 	</div>
 
 	<div class="column right">
-	    <div id="quote" style="border:1px solid black; height:242px"></div>
-	    <script>
-	      (function() {
-		  var quotes = [
-		      {
-			  text: "The ground state of an <a href=\"https:en.wikipedia.org/wiki/Azobenzene\">azobenzene</a> molecule (C12H10N2), obtained by solving the Kohn-Sham equaiton using an h-adaptive FEM.<br><br> Left half: the iossurface of the ground state electron density.<br><br> right half: mesh grids.",
-			  img:  "pics/azobenzene_meshIso.png",
-		      },
-		      {
-			  text: "Neighbors for the target element (red triangle element) built based on a hierarchy tree of the mesh.",
-			  img:  "pics/multiNeighbors.gif",
-		      }
-		  ];
-		  var quote = quotes[Math.floor(Math.random() * quotes.length)];
-		  document.getElementById("quote").innerHTML =
-		      '<img style="height:240px;" alt="figure" align="left" src="' + quote.img + '">' +
-		      '<p style="font-style:italic;font-size:13" align="bottom">' + quote.text + '</p>';
-		      ;
-	      })();
-	      </script>	    
-	  </div>
+	  <div id="quote" style="border:1px solid black; height:242px"></div>
+	  <script>
+	    (function() {
+		var quotes = [
+		    {
+			text: "The ground state of an <a href=\"https:en.wikipedia.org/wiki/Azobenzene\">azobenzene</a> molecule (C12H10N2), obtained by solving the Kohn-Sham equaiton using an h-adaptive FEM.<br><br> Left half: the iossurface of the ground state electron density.<br><br> right half: mesh grids.",
+			img:  "pics/azobenzene_meshIso.png",
+		    },
+		    {
+			text: "Neighbors for the target element (red triangle element) built based on a hierarchy tree of the mesh.",
+			img:  "pics/multiNeighbors.gif",
+		    }
+		];
+		var quote = quotes[Math.floor(Math.random() * quotes.length)];
+		document.getElementById("quote").innerHTML =
+		    '<img style="height:240px;" alt="figure" align="left" src="' + quote.img + '">' +
+		    '<p style="font-style:italic;font-size:13" align="bottom">' + quote.text + '</p>';
+		;
+	    })();
+	    </script>	    
 	</div>
       </div>
       <br>
