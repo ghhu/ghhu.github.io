@@ -26,48 +26,44 @@
     <br>
 
     <p>
-      Developing numerical software for both scientific exploration and
-      engineering applications is one of my research interests. Currently, I
-      mainly concern partial differential equations from a variety of areas such
-      as computatoinal fluid dynamics, electronic structure calculations, and
-      computational micromagnetics. Due to, e.g., nonlinearity, high
-      dimensionality, complexity of the domain and boundary conditions, etc.,
-      analytical solutions generally are not available. Hence, a numerical
-      solver becomes vital for PDE-based applications, and the efficiency of the
-      numerical solver is one of the most important feature desired.
+      Developing numerical software for both scientific exploration
+      and engineering applications is one of my research
+      interests. Currently, I mainly concern solutions of partial
+      differential equations from a variety of areas such as
+      computational fluid dynamics, electronic structure calculations,
+      and computational micromagnetics. Due to, e.g., nonlinearity,
+      high dimensionality, complexity of the domain and boundary
+      conditions, etc., analytical solutions generally are not
+      available. Hence, a numerical solver becomes vital for PDE-based
+      applications, and the efficiency of the numerical solver is one
+      of the most important features desired.
     </p>
 
     <p><a href="http://dsec.pku.edu.cn/~rli/software.php">AFEPack</a>
-      (<b>A</b>daptive <b>F</b>inite <b>E</b>lement <b>Pack</b>age) is a
-      general-purposed C++ library for numerical solutions of partial
-      differential equations, originally developed by Prof. Ruo Li from Peking
-      University and Prof. Wenbin Liu from BNU-HKBU UIC. With over two decades
-      development, AFEPack has been successfully applied for scientific and
-      engineering computational problems in a variety of areas such as
-      computational fluid dynamics, electronic structure calculations,
-      computational micromagnetics. In this paper, design philosophy of the
-      library, algorithms and data structures used in the discretization of
-      governing equations, numerical linear algebra for the discretized system,
-      as well as the pre-processing and post-processing of the simulations, will
-      be described systematically for the AFEPack. The realization of two main
-      features of the library, i.e., adaptive mesh methods and parallel
-      computing, will be introduced in detail. The potential of the library for
-      large scale scientific/engineering problems would be demonstrated by
-      several examples. The future works on developing the library will also be
-      discussed.
+      (<b>A</b>daptive <b>F</b>inite <b>E</b>lement <b>Pack</b>age) is
+      a general-purpose C++ library for numerical solutions of partial
+      differential equations, originally developed by Prof. Ruo Li
+      from Peking University and Prof. Wenbin Liu from BNU-HKBU
+      UIC. With over two decades development, AFEPack has been
+      successfully applied for scientific and engineering
+      computational problems in a variety of areas. To promopt the
+      library, recently collaborators and I are working on the
+      following paper <i>Z. Cai et al, AFEPack: a general-purpose C++
+      library for numerical solutions of partial differential
+	equations, preprint</i>.
     </p>
 
-    <p>My research on design, analysis, and coding of numerical algorithms is
-    based on AFEPack. Towards different purposes, three specific-purposed
-    software have been roughy formed in compressible computational fluid
+    <p>My research on design, analysis, and coding of numerical
+    algorithms is based on AFEPack. Three specific-purpose software
+    have been roughly formed in compressible computational fluid
     dynamics, electronic structure calculations, and computational
     micromagnetics, respectively, which are introduced below.</p>
     
-    <ul>
-      <li><p>AFVM4CFD is designed for the numerical simulations for compressible
+ 
+      <p>AFVM4CFD is designed for the numerical simulations for compressible
       fluid dynamics. The package is based on finite volume methods, and aims at
       solving Euler and Navier-Stokes equations. The development of this package
-      started from when I was a PhD student. Collaborators include Tao Tang
+      started when I was a PhD student. Collaborators include Tao Tang
       (UIC), Ruo Li(Peking U.), Yana Di (UIC), Nianyu Yi(Xiangtan U.), Xiaohua
       Zhang (Yunnan Normal University), Xucheng Meng(Beijing Normal U.), Li Chen
       , Feng Yang (Ant Limited), Jingfeng Wang (U. of Macau), Nizheng Liao(U. of
@@ -80,18 +76,19 @@
 	<li> For applications in design of vehicle shape, detonation
 	simulations, etc. </li>
 	</ul>
-      </p></li>
+      </p>
 
-<li><p>AFEABIC is developed for the electronic structure calculations, which
-      potentially has widely applications in nano sciences, quantum
-      computational chemistry, etc. The development of this package started from
-      when I was a postdoc at Michigan State University. Collaborators include
-      Gang Bao (Zhejiang U.), Di Liu (Michigan State U.), Hehu Xie (CAS), Xin
-      Liu (CAS), Zhenning Cai (NUS), Fei Xu (Beijing U. of Tech.), Bin Gao
-      (CAS), Jie Zhou (Xiangtan U.), Yang Kuang (Guangdong U. of Tech.), Yedan
-      Shen (Guangzhou U.), Hongfei Zhan (Peking U.), Ting Wang (Southwest
-      Petroleum U.), Chengyu Liu (U. of Macau).  The features of the package
-      include
+<p>AFEABIC is developed for the electronic structure calculations,
+      which potentially has wide applications in nano sciences,
+      quantum computational chemistry, etc. The development of this
+      package started when I was a postdoc at Michigan State
+      University. Collaborators include Gang Bao (Zhejiang U.), Di Liu
+      (Michigan State U.), Hehu Xie (CAS), Xin Liu (CAS), Zhenning Cai
+      (NUS), Fei Xu (Beijing U. of Tech.), Bin Gao (CAS), Jie Zhou
+      (Xiangtan U.), Yang Kuang (Guangdong U. of Tech.), Yedan Shen
+      (Guangzhou U.), Hongfei Zhan (Peking U.), Ting Wang (Southwest
+      Petroleum U.), Chengyu Liu (U. of Macau).  The features of the
+      package include
       <ul>
 	<li> 30K+ lines code for core algorithms;</li>
 	<li> For both ground-state and dynamics simulations; </li>
@@ -100,9 +97,9 @@
 	<li> For applications in geometry optimization of given molecules, and
 	nano- and quantum-optics problems; </li>
 	</ul>
-</p></li>
+</p>
 
-      <li><p>AFEMAG is developed for numerical simulations in computational
+     <p>AFEMAG is developed for numerical simulations in computational
       micromagnetics. Collaborators include Jingrun Chen (U. of Science and
       Technology of China), Lei Yang (Macau U. of Science and Technology), Rui
       Du (Soochow U.), Jing Wu (Soochow U.), Jiajun Zhan and Zixuan Cui and
@@ -113,11 +110,10 @@
       The features of the package include
       <ul>
 	<li>10K+ lines code for core algorithms;</li>
-	<li> For ground-state calculations of micormagnetics systems;</li>
+	<li> For ground-state calculations of micromagnetics systems;</li>
 	<li> Fast calculation of demagnetization field in general domain with complex geometry</li>
       </ul>
-      </p></li>
-    </ul>
+      </p>
 
       <br>
       <br>
