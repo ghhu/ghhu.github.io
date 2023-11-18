@@ -85,55 +85,52 @@
       <br>
       
       <h2>Research Interests&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 	  <font size=3><a href="./publication.html">Publications</a>&nbsp -- &nbsp<a href="./software.html">Software</a></font><!-- &nbsp&nbsp<a href="./presentation.html"><font size=3>Presentations</font></a> --></h2>
-      <div class="row">
-	<div class="column left">
-	  <ul>
-	    <li>
-	      I am interested in numerical methods for partial differential
-	      equations, including the design and analysis of numerical methods,
-	      efficient implementation of algorithms, as well as applications of
-	      methods in computational physics such as computational fluid
-	      dynamics, electronic structure calculations, computational
-	      micromagnetics.
-	    </li>
-	    <li>
-	      I am also interested in developing numerical software, for both
-	      scientific research and engineering applications.
-	    </li>
-	  </ul>
-	  <br>
-
-	  <br>
-	</div>
-
-	<div class="column right">
-	  <div id="quote" style="border:1px solid black; height:242px"></div>
-	  <script>
-	    (function() {
-		var quotes = [
-		    {
-			text: "We predicted <font color=\"blue\">L = 8.4884</font> in muMAG Standard Problem <a href=\"https://www.ctcms.nist.gov/~rdm/spec3.html\"> \#3</a> in our work [<i>Yang, Chen, Hu, JCP 431:110142, 2021]</i> <a href=\"https://doi.org/10.1016/j.jcp.2021.110142\">DOI</a>.",
-			img:  "pics/flowerVortexMag.jpg",			
-		    },
-		    {
-			text: "The ground state of an <a href=\"https://en.wikipedia.org/wiki/Azobenzene\">azobenzene</a> molecule (C12H10N2), obtained by solving the Kohn-Sham equaiton using an h-adaptive FEM.<br><br> Left half: the iossurface of the ground state electron density.<br><br> right half: mesh grids.",
-			img:  "pics/azobenzene_meshIso.png",
-		    },
-		    {
-			text: "Neighbors for the target element (red triangle element) built based on a hierarchy tree of the mesh.",
-			img:  "pics/multiNeighbors.gif",
-		    }
-		];
-		var quote = quotes[Math.floor(Math.random() * quotes.length)];
-		document.getElementById("quote").innerHTML =
-		    '<img style="height:240px;" alt="figure" align="left" src="' + quote.img + '">' +
-		    '<p style="font-style:italic;font-size:13" align="bottom">' + quote.text + '</p>';
-		;
-	    })();
-	    </script>	    
-	</div>
-      </div>
+      <ul>
+	<li>
+	  I am interested in numerical methods for partial
+	  differential equations, including the design and analysis of
+	  numerical methods, efficient implementation of algorithms,
+	  as well as applications of methods in computational physics
+	  such as computational fluid dynamics, electronic structure
+	  calculations, computational micromagnetics.
+	</li>
+	<li>
+	  I am also interested in developing numerical software, for
+	  both scientific research and engineering applications.
+	</li>
+      </ul>
       <br>
+
+      <br>
+      <div id="quote" style="border:1px solid black; height:242px; width:900px; margin:auto"></div>
+      <script>
+	(function() {
+	    var quotes = [
+		{
+		    text: "In <a href=\"https://www.ctcms.nist.gov/~rdm/spec3.html\"> muMAG Standard Problem #3</a>, the \"single domain limit\" L is wondering to guarantee the same energies of flower state and vortex state. <br><br>We predicted <font color=\"blue\">L = 8.4884</font> in our work [<i>Yang, Chen, Hu, JCP 431:110142, 2021]</i> <a href=\"https://doi.org/10.1016/j.jcp.2021.110142\">DOI</a>.",
+		    img1:  "pics/flowerVortexMag.jpg",
+		    img2:  "pics/mumag3Convergence.gif",		    
+		},
+		{
+		    text: "The ground state of an <a href=\"https://en.wikipedia.org/wiki/Azobenzene\">azobenzene</a> molecule (C12H10N2), obtained by solving the Kohn-Sham equaiton using an h-adaptive FEM.<br><br> Left half: the iossurface of the ground state electron density.<br><br> right half: mesh grids.",
+		    img1:  "pics/azobenzene_meshIso.png",
+		    img2:  "",		    
+		},
+		{
+		    text: "Neighbors for the target element (red triangle element) built based on a hierarchy tree of the mesh.",
+		    img:  "pics/multiNeighbors.gif",
+		}
+	    ];
+	    var quote = quotes[Math.floor(Math.random() * quotes.length)];
+	    document.getElementById("quote").innerHTML =
+		'<img style="height:240px;" alt="figure" align="left" style="border:2px solid black" src="' + quote.img1 + '">' +
+		'<img style="height:240px;" alt="figure" align="left" src="' + quote.img2 + '">' +		
+		'<p style="font-style:italic;font-size:13" align="bottom">' + quote.text + '</p>';
+	    ;
+	})();
+	</script>	    
+    </div>
+    <br>
       
       <h2>Funding Acknowledgements</h2>
       <ul>
