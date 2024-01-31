@@ -23,11 +23,11 @@ body {
 
 .left {
     float: left;
-    width: 50%;
+    width: 70%;
 }
 .right {
     float: right;
-    width: 50%;
+    width: 30%;
 }
 
 /* Clear floats after the columns */
