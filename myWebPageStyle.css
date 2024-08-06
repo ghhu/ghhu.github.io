@@ -75,6 +75,8 @@ a:active {
 table.frontPageTab{
     width: 100%;
     border-collapse:collapse;
+    border-style:ridge;
+    border-color: #dcdcdc;
 }
 
 .frontPageTab td{
