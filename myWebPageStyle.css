@@ -1,12 +1,15 @@
 .content {
-    max-width: 960px;
+    max-width: 1024px;
+    width: 95%;
     margin: auto;
 }
 body {
     background-color: white;
-    /* font-family: Helvetica, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif */
-    font-family :Georgia, Helvetica, Arial, SimSun, sans-serif;
-    width: 960px;
+    font-family: Helvetica, Arial, STXihei, “华文细黑”, Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, sans-serif
+    /* font-family :Georgia, Helvetica, Arial, SimSun, sans-serif; */
+    font-size: 12;
+    max-width: 1024px;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -88,12 +91,10 @@ table.frontPageTab{
 .frontPageTab th:nth-child(odd){
     background: #dcdcdc;
     padding:0px;
-    font-size:120%;
 }
 
 .frontPageTab th:nth-child(even){
     padding:0px;
-    font-size:150%;
 }
 
 /*  Define the background color for all the ODD table columns  */
