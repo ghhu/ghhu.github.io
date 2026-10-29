@@ -1,0 +1,211 @@
+/* myWebPageStyle.css - External Stylesheet for Academic Webpage */
+
+:root {
+    --primary-color: #000;
+    --accent-color: #333;
+    --bg-color: #fff;
+    --text-color: #333;
+    --border-color: #ccc;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 20px;
+}
+
+header .logo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+header .logo-section img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+header hr {
+    width: 70%;
+    border-top: 2px solid black;
+    margin: 10px 0 20px 0;
+}
+
+/* Profile Info */
+.profile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.profile-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-right {
+    flex: 0 0 auto;
+}
+
+.profile-right img {
+    width: 166px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.name-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cv-link {
+    font-size: 1rem;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #0056b3;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+h3 {
+    margin-top: 20px;
+    color: var(--accent-color);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Date Float Right */
+.date-right {
+    float: right;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Teaching Table */
+table.frontPageTab {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+table.frontPageTab th,
+table.frontPageTab td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+table.frontPageTab th {
+    background-color: #f2f2f2;
+}
+
+/* Quote Section */
+#quote {
+    padding: 15px;
+    border: 1px solid #ccc;
+    min-height: 300px;
+    margin: 20px auto;
+    max-width: 900px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#quote img {
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+#quote p {
+    font-style: italic;
+    font-size: 0.95rem;
+    margin: 0;
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    border-top: 2px solid black;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+footer img {
+    height: 32px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-grid {
+        flex-direction: column-reverse;
+    }
+
+    .profile-right {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #quote {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #quote img {
+        height: auto;
+        max-width: 100%;
+        width: 200px;
+    }
+
+    .date-right {
+        float: none;
+        display: block;
+        margin-top: 5px;
+        font-weight: normal;
+        font-size: 0.9rem;
+    }
+
+    .logo-section img {
+        height: 40px;
+    }
+}
